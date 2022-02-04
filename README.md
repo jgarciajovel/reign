@@ -6,7 +6,7 @@ This API allows you to get the latest news from [Algolia API](https://hn.algolia
 ### Tasks
 - The server, once an hour, should connect to the API ✅
 - It should insert the data from the API ✅
-- Define a REST API which the client will be used to retrieve the data. ✅
+- Define a REST API which the client will use to retrieve the data. ✅
 - Return paginated results with a maximum of 5 items. ✅
 - Should be able to be filtered by author, _tags, title. ✅
 - Endpoint that allows the user to remove items. ✅
