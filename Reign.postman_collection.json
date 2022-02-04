@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "e9f11c57-1991-4875-b096-de61c804d685",
+		"name": "Reign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/news?page=1&author=enduser&title=Ask HN: How do carriers throttle streaming to 480p resolution?&tags=comment,author_enduser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "author",
+							"value": "enduser"
+						},
+						{
+							"key": "title",
+							"value": "Ask HN: How do carriers throttle streaming to 480p resolution?"
+						},
+						{
+							"key": "tags",
+							"value": "comment,author_enduser"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Populate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/news/populate",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news",
+						"populate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/news/61fc637338ab84b479e63411",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"news",
+						"61fc637338ab84b479e63411"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
